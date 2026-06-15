@@ -1,0 +1,25 @@
+{
+    "name": "candidate/rick-and-morty-encyclopedia",
+    "description": "A small MVC PHP application for browsing Rick and Morty characters.",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": ">=8.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "files": [
+            "src/Support/helpers.php"
+        ]
+    },
+    "scripts": {
+        "serve": "php -S 127.0.0.1:8080 -t public public/router.php",
+        "check": "php scripts/check.php"
+    },
+    "config": {
+        "process-timeout": 0,
+        "sort-packages": true
+    }
+}
